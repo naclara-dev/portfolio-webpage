@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="assets/css/animations.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+    <script src="assets/js/script.js" defer></script>
+    <script src="i18n/i18n.js" defer></script>
+
+    <title>Ana Clara | Software Developer</title>
+</head>
+<body>
+    <div class="scroll" id="scroll"></div>
+
+    <header class="flex-container">
+        <div class="toggle-btn">
+            <div class="toggle-item active" data-i18n="en">
+                en-us
+            </div>
+            <div class="toggle-item" data-i18n="pt">
+                pt-br
+            </div>
+        </div>
+
+        <nav id="navbar">
+            <ul class="main-menu flex-container" id="main-menu">
+                <li>
+                    <a href="#hero" id="nav_home" class="menu-item" data-i18n="nav_home"></a>                                        
+                </li>                
+                <li>
+                    <a href="#skills" id="nav_skills" class="menu-item" data-i18n="nav_skills"></a>
+                </li>
+                <li>
+                    <a href="#projects" id="nav_about" class="menu-item" data-i18n="nav_about"></a>
+                </li>
+                <li>
+                    <a href="#contact" id="nav_contact" class="menu-item" data-i18n="nav_contact"></a>
+                </li>
+            </ul>
+        </nav>
+
+        <button class="burger-menu-btn" id="burger-menu-btn">
+            <svg height="40" width="40" xmlns="http://www.w3.org/2000/svg" id="burger-icon">
+                <line x1="0" y1="10" x2="40" y2="10" class="line1"/>
+                <line x1="0" y1="20" x2="40" y2="20" class="line2"/>
+                <line x1="0" y1="30" x2="40" y2="30" class="line3"/>
+            </svg>               
+        </button>
+    </header>
+
+    <main>
+        <section class="hero monospaced flex-container" id="hero" data-link="nav-home">
+            <article class="hero-child">                   
+                <h1>Hello, World!</h1>
+                <h2 class="gradient-title" data-i18n="main_title"></h2>                              
+
+                <div class="github-btn">
+                    <a href="https://github.com/euanaclwra" target="_blank" data-i18n="github_button"></a>                     
+                </div>                
+            </article>         
+        </section>        
+
+        <section class="skills" id="skills" data-link="nav_skills">
+            <h2 class="section-title" data-i18n="skills_title"></h2>
+
+            <article class="flex-container">
+                <article class="skill-item">
+                    <svg class="icon" xmlns="http://www.w3.org/2000/svg" width="25%" height="auto" viewBox="0 0 35 35">
+                        <use href="assets/img/icons.svg#web"></use>                        
+                    </svg>
+
+                    <h4>Web</h4>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum commodo magna massa, eu maximus tortor finibus sit amet. Vivamus hendrerit lorem neque, quis pulvinar metus aliquet non.                  
+                    </p> 
+                    <button>                    
+                        <svg class="arrow" xmlns="http://www.w3.org/2000/svg" width="25px" height="25px">
+                            <use href="assets/img/icons.svg#arrow"></use>
+                        </svg>
+                        <div class="grid-container">
+                            <svg class="html" xmlns="http://www.w3.org/2000/svg" width="25px" height="25px">
+                                <use href="assets/img/icons.svg#html"></use>
+                                <title>HTML</title>
+                            </svg>
+                            <svg class="css" xmlns="http://www.w3.org/2000/svg" width="25px" height="25px">
+                                <use href="assets/img/icons.svg#css"></use>
+                                <title>CSS</title>
+                            </svg>
+                            <svg class="javascript" xmlns="http://www.w3.org/2000/svg" width="25px" height="25px">
+                                <use href="assets/img/icons.svg#javascript"></use>
+                                <title>JavaScript</title>
+                            </svg>
+                            <svg class="php" xmlns="http://www.w3.org/2000/svg" width="25px" height="25px">
+                                <use href="assets/img/icons.svg#php"></use>
+                                <title>PHP</title>
+                            </svg>
+                        </div>
+                    </button>                   
+                </article>
+                <div class="divider"></div>  
+                <article class="skill-item">
+                    <svg class="icon" xmlns="http://www.w3.org/2000/svg" width="25%" height="auto" viewBox="0 0 35 35">
+                        <use href="assets/img/icons.svg#desktop"></use>
+                    </svg>
+                    <h4>Desktop</h4>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum commodo magna massa, eu maximus tortor finibus sit amet. Vivamus hendrerit lorem neque, quis pulvinar metus aliquet non.                  
+                    </p>  
+                    <button>                    
+                        <svg class="arrow" xmlns="http://www.w3.org/2000/svg" width="25px" height="25px">
+                            <use href="assets/img/icons.svg#arrow"></use>
+                        </svg>
+                        <div class="grid-container">
+                            <svg class="delphi" xmlns="http://www.w3.org/2000/svg" width="25px" height="25px">
+                                <use href="assets/img/icons.svg#delphi"></use>
+                                <title>RAD Studio</title>
+                            </svg>
+                            <svg class="visualstudio" xmlns="http://www.w3.org/2000/svg" width="25px" height="25px">
+                                <use href="assets/img/icons.svg#visualstudio"></use>
+                                <title>Visual Studio</title>
+                            </svg>
+                        </div>
+                    </button>                 
+                </article>  
+                <div class="divider"></div> 
+                <article class="skill-item">
+                    <svg class="icon" xmlns="http://www.w3.org/2000/svg" width="25%" height="auto" viewBox="0 0 50 50">
+                        <use href="assets/img/icons.svg#database"></use>
+                    </svg>
+                    <h4>Database</h4>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum commodo magna massa, eu maximus tortor finibus sit amet. Vivamus hendrerit lorem neque, quis pulvinar metus aliquet non.                  
+                    </p> 
+                    <button>                    
+                        <svg class="arrow" xmlns="http://www.w3.org/2000/svg" width="25px" height="25px">
+                            <use href="assets/img/icons.svg#arrow"></use>
+                        </svg>
+                        <div class="grid-container">
+                            <svg class="mysql" xmlns="http://www.w3.org/2000/svg" width="30px" height="30px">
+                                <use href="assets/img/icons.svg#mysql"></use>
+                                <title>MySQL</title>
+                            </svg>
+                            <svg class="mongodb" xmlns="http://www.w3.org/2000/svg" width="30px" height="30px">
+                                <use href="assets/img/icons.svg#mongodb"></use>
+                                <title>MongoDB</title>
+                            </svg>
+                        </div>
+                    </button>                 
+                </article> 
+                <div class="divider"></div> 
+                <article class="skill-item">
+                    <svg class="icon" xmlns="http://www.w3.org/2000/svg" width="25%" height="auto" viewBox="0 0 35 35">
+                        <use href="assets/img/icons.svg#cloud"></use>
+                    </svg>
+                    <h4>Cloud</h4>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum commodo magna massa, eu maximus tortor finibus sit amet. Vivamus hendrerit lorem neque, quis pulvinar metus aliquet non.                  
+                    </p>  
+                    <button>                    
+                        <svg class="arrow" xmlns="http://www.w3.org/2000/svg" width="25px" height="25px">
+                            <use href="assets/img/icons.svg#arrow"></use>
+                        </svg>
+                        <div class="grid-container">
+                            <svg class="aws" xmlns="http://www.w3.org/2000/svg" width="30px" height="30px">
+                                <use href="assets/img/icons.svg#aws"></use>
+                                <title>Amazon Web Services</title>
+                            </svg>
+                            <svg class="azure" xmlns="http://www.w3.org/2000/svg" width="30px" height="30px">
+                                <use href="assets/img/icons.svg#azure"></use>
+                                <title>Microsoft Azure</title>
+                            </svg>
+                        </div>
+                    </button>                   
+                </article> 
+            </article>
+        </section>
+
+        <section class="about flex-container" id="projects" data-link="nav_about">
+            <h2 class="section-title gradient-title" data-i18n="about_title"></h2>
+
+            <article class="grid-container">
+                <article class="project">
+                    <div class="badge">Windows C# Application</div>
+                    <div class="info">
+                        <h5 class="name">Project Name</h5>
+                        <span class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span>
+                    </div>
+                </article>
+                <article class="project">
+                    <div class="badge">Python Script</div>
+                    <div class="info">
+                        <h5 class="name">Project Name</h5>
+                        <span class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span>
+                    </div>
+                </article>
+                <article class="project">
+                    <div class="badge">iOS React Application</div>
+                    <div class="info">
+                        <h5 class="name">Project Name</h5>
+                        <span class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span>
+                    </div>
+                </article>
+                <article class="project">
+                    <div class="badge">Web Interface</div>
+                    <div class="info">
+                        <h5 class="name">Project Name</h5>
+                        <span class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span>
+                    </div>
+                </article>
+            </article>
+        </section>        
+
+        <section class="contact" id="contact" data-link="nav_contact">
+            <h2 class="section-title gradient-title" data-i18n="contact_title"></h2>
+
+            <article class="flex-container contact-box">
+                <article class="flex-container contact-item">
+                    <img src="/assets/img/email.png" alt="E-mail Icon">  
+                    <div class="divider"></div>    
+                    <div>
+                        <h4 data-i18n="contact1_title"></h4>
+                        <a href="mailto:anaclrdev@gmail.com" target="_blank">anaclrdev@gmail.com</a>
+                    </div>              
+                </article>
+                <article class="flex-container contact-item">                    
+                    <img src="/assets/img/github.png" alt="GitHub Icon">
+                    <div class="divider"></div>    
+                    <div>                        
+                        <h4 data-i18n="contact2_title"></h4>
+                        <a href="https://github.com/euanaclwra" target="_blank">github.com/euanaclwra</a>
+                    </div>
+                </article>
+                <article class="flex-container contact-item">                    
+                    <img src="/assets/img/linkedin.png" alt="E-mail Icon">
+                    <div class="divider"></div>
+                    <div>
+                        <h4 data-i18n="contact3_title"></h4>
+                        <a href="https://linkedin.com/in/anaclarasilva82/" target="_blank">linkedin.com/in/anaclarasilva82</a>
+                    </div>
+                </article>
+            </article>
+        </section>
+    </main>
+</body>
+</html>
