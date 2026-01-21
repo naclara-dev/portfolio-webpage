@@ -18,7 +18,7 @@
 
     <header class="flex-container">
         <div class="toggle-btn">
-            <div class="toggle-item active" data-i18n="en">
+            <div class="toggle-item" data-i18n="en">
                 en-us
             </div>
             <div class="toggle-item" data-i18n="pt">
@@ -35,7 +35,7 @@
                     <a href="#skills" id="nav_skills" class="menu-item" data-i18n="nav_skills"></a>
                 </li>
                 <li>
-                    <a href="#projects" id="nav_about" class="menu-item" data-i18n="nav_about"></a>
+                    <a href="#about" id="nav_about" class="menu-item" data-i18n="nav_about"></a>
                 </li>
                 <li>
                     <a href="#contact" id="nav_contact" class="menu-item" data-i18n="nav_contact"></a>
@@ -65,7 +65,7 @@
         </section>        
 
         <section class="skills" id="skills" data-link="nav_skills">
-            <h2 class="section-title" data-i18n="skills_title"></h2>
+            <h2 class="section-title gradient-title" data-i18n="skills_title"></h2>
 
             <article class="flex-container">
                 <article class="skill-item">
@@ -174,15 +174,29 @@
             </article>
         </section>
 
-        <section class="about flex-container" id="projects" data-link="nav_about">
-            <h2 class="section-title gradient-title" data-i18n="about_title"></h2>
+        <section class="about" id="about" data-link="nav_about">
+            <article class="flex-container">
+                <article class="box title-box">
+                    <h2 class="section-title gradient-title" data-i18n="about_title"></h2>
+                </article>
+                 
+                 <article class="box about-box">
+                    <div class="about-item">
+                        <p data-i18n="about_text1"></p>
+                        <p data-i18n="about_text2"></p>
+                        <p data-i18n="about_text3"></p>
+                    </div>
+                 </article>
+            </article>
         </section>        
 
         <section class="contact" id="contact" data-link="nav_contact">
             <article class="flex-container">
-                <h2 class="section-title gradient-title" data-i18n="contact_title"></h2>
+                <article class="box title-box">
+                    <h2 class="section-title gradient-title" data-i18n="contact_title"></h2>
+                </article>
 
-                <article class="contact-box">
+                <article class="box contact-box">
                     <div class="contact-item">
                         <div class="flex-container">
                             <img src="assets/img/mail.svg" alt="Mail Icon">

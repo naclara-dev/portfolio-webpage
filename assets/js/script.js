@@ -5,6 +5,13 @@ const sections = document.querySelectorAll("section");
 
 // ========== EVENT LISTENERS ========== //
 
+document.addEventListener('DOMContentLoaded', function () {
+    const language = localStorage.getItem('appLanguage') || 'pt';
+    const option = document.querySelector(`[data-i18n=${language}]`);
+
+    slideToggle(option);
+});
+
 document.querySelectorAll(".toggle-item").forEach(item => {
     item.addEventListener("click", function () {
         slideToggle(this);

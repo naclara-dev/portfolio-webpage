@@ -29,6 +29,8 @@ async function loadLanguage(lang) {
 
 // Altera o conteúdo do HTML com base no idioma
 async function setLanguage(lang) {
+    // Salva a configuração no browser
+    localStorage.setItem('appLanguage', lang);
     // Armazena o JSON
     const languageData = await loadLanguage(lang);
 
@@ -55,7 +57,9 @@ async function setLanguage(lang) {
     });
 }
 
-// Inicializa o idioma como inglês
+// Inicializa o idioma 
 document.addEventListener('DOMContentLoaded', () => {
-    setLanguage('en');
+    // Procura uma opção salva no browser, se não houver, exibe em Português
+    const language = localStorage.getItem('appLanguage') || 'pt';
+    setLanguage(language);
 });

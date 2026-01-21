@@ -220,8 +220,12 @@ h2 {
   text-align: left;  
 }
 
-.hero-child h1, .hero-child h2 {
-  font-size: clamp(3rem, 5vw, 4rem);
+.hero-child h1 {
+  font-size: clamp(2.9rem, 5vw, 4rem);
+}
+
+.hero-child h2 {
+  font-size: clamp(2.3rem, 5vw, 4rem);
 }
 
 .hero-child img {
@@ -273,6 +277,10 @@ h2 {
 
 .grid-container {
   display: grid;
+}
+
+.skills h2 {
+  font-size: clamp(3rem, 5vw, 4.5rem);
 }
 
 .skills .flex-container {
@@ -342,23 +350,49 @@ h2 {
   opacity: 0.2;
 }
 
-.contact article.flex-container {
-  gap: 10rem;
-  justify-content: center;
+.contact article.flex-container, .about article.flex-container {
+  gap: 5rem;
+  justify-content: stretch;
+  width: 100%;
 }
 
-.contact h2 {
-  font-size: 5.5rem;
+.about h2, .contact h2 {
+  font-size: clamp(3.5rem, 5vw, 5.5rem);
   text-align: left;
   white-space: normal;
-  max-width: 6ch;
-  line-height: 92%;
+  
+}
+
+.contact h2, .about h2 {
+  max-width: 8ch;
+  text-align: right;
+}
+
+.box {
+  flex: 1 1 0;
+  min-width: 0; 
+}
+
+.title-box {
+  display: flex;
+  justify-content: end;
 }
 
 .contact .contact-box {
   display: flex;
   flex-direction: column;
   gap: 3.5rem;
+}
+
+.about .about-item {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.about .about-item p {
+  text-align: justify;
+  max-width: 500px;
 }
 
 .contact .contact-item img {
@@ -374,4 +408,9 @@ h2 {
 .contact .contact-item a {
   font-size: 1.3rem;
   opacity: 0.8;
+  transition: color 0.2s;
+}
+
+.contact .contact-item a:hover {
+  color: var(--pink);
 }

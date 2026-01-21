@@ -36,8 +36,9 @@
     transform: translateY(-10px) rotate(-45deg);
   }
 
-  nav {
+  #navbar {
     z-index: 10;
+    border: none;
   }
 
   .main-menu {

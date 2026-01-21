@@ -5,8 +5,10 @@
    "nav_contact": "fale comigo",
    "main_title": "Sou Ana, Desenvolvedora Full Stack",
    "github_button": "Ver GitHub",
-   "about_title": "O Que Eu Faço?",
-   "about_text": "I’m a full-stack developer passionate about creating solutions that combine design and performance. With over four years of experience on diverse projects, I work on web, mobile and desktop applications. Furthermore, I am also a big enthusiast of information security, always seeking to combine performance with the secure development of my applications.",
+   "about_title": "Meu Trabalho",
+   "about_text1": "Minhas soluções digitais são pensadas para transformar necessidades reais em ferramentas eficientes, que facilitam processos, melhoram a experiência dos usuários e fortalecem a presença do negócio no ambiente digital.",
+   "about_text2": "Atuo desde a criação de websites e aplicações web até o desenvolvimento de sistemas desktop, banco de dados e infraestrutura em cloud, sempre buscando equilíbrio entre desempenho, usabilidade e design.",
+   "about_text3": "Mais do que tecnologia, entrego soluções que apoiam decisões, melhoram a comunicação com clientes e acompanham o crescimento do seu negócio.",
    "skills_title": "Soluções",
    "skill1_title": "Web",
    "skill1_description": "Desenvolvimento de interfaces responsivas, projetadas para combinar estética, usabilidade e desempenho, transformando ideias em soluções digitais eficientes. Foco em experiência do usuário intuitiva e identidade visual alinhada à marca.",
@@ -14,10 +16,10 @@
    "skill2_description": "Desenvolvimento de aplicações desktop robustas e bem estruturadas, projetadas para unir desempenho, organização e facilidade de uso. Ênfase em fluxos eficientes, interfaces claras e soluções pensadas para otimizar rotinas e processos.",
    "skill3_title": "Banco de Dados",
    "skill3_description": "Modelagem e organização de bancos de dados, focadas em integridade, desempenho e segurança da informação. Estruturação de dados pensada para suportar aplicações estáveis, escaláveis e de fácil manutenção.",
-   "skill4_title": "Cloud",
-   "skill4_description": "Configuração e gerenciamento de soluções em cloud, com foco em disponibilidade, escalabilidade e confiabilidade. Implementação de ambientes preparados para sustentar aplicações modernas com eficiência e flexibilidade.",
+   "skill4_title": "Nuvem",
+   "skill4_description": "Configuração e gerenciamento de soluções em nuvem, com foco em disponibilidade, escalabilidade e confiabilidade. Implementação de ambientes preparados para sustentar aplicações modernas com eficiência e flexibilidade.",
    "contact_title": "Fale Comigo",
-   "contact1_title": "Me mande um e-mail",
-   "contact2_title": "Veja mais no GitHub",
-   "contact3_title": "Conecte-se no LinkedIn"
+   "contact1_title": "E-mail",
+   "contact2_title": "GitHub",
+   "contact3_title": "LinkedIn"
 }
