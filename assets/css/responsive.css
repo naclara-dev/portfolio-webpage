@@ -1,4 +1,26 @@
+/* Tablet */
+@media (max-width: 1024px) {
+  .skills article.grid-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .skill-item {
+    margin: 0.5rem;
+  }
+  .about article.flex-container {
+    flex-direction: column;
+    align-items: center;
+  }
+  .about h2 {
+    text-align: left;
+  }
+}
+
+/* Mobile */
 @media (max-width: 768px) {  
+  .skills article.grid-container {
+    grid-template-columns: 1fr;
+  }
+
   .flex-container {
     flex-direction: column;
   }
