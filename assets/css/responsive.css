@@ -8,7 +8,6 @@
     height: 1px;
   }
 
-  /* Menu Hambúrguer */
   .burger-menu-btn {
     display: block;
     align-self: flex-end;
@@ -69,4 +68,12 @@
   .menu-item.active::after, .menu-item:target-current::after {
     transform: scaleX(0)
   }
+
+  .contact article.flex-container {
+    gap: 1rem;
+  }  
+
+  .contact .contact-item img {
+    margin-bottom: 1rem;
+  }  
 }

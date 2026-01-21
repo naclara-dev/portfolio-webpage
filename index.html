@@ -73,10 +73,8 @@
                         <use href="assets/img/icons.svg#web"></use>                        
                     </svg>
 
-                    <h4>Web</h4>
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum commodo magna massa, eu maximus tortor finibus sit amet. Vivamus hendrerit lorem neque, quis pulvinar metus aliquet non.                  
-                    </p> 
+                    <h4 data-i18n="skill1_title"></h4>
+                    <p data-i18n="skill1_description"></p> 
                     <button>                    
                         <svg class="arrow" xmlns="http://www.w3.org/2000/svg" width="25px" height="25px">
                             <use href="assets/img/icons.svg#arrow"></use>
@@ -106,10 +104,9 @@
                     <svg class="icon" xmlns="http://www.w3.org/2000/svg" width="25%" height="auto" viewBox="0 0 35 35">
                         <use href="assets/img/icons.svg#desktop"></use>
                     </svg>
-                    <h4>Desktop</h4>
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum commodo magna massa, eu maximus tortor finibus sit amet. Vivamus hendrerit lorem neque, quis pulvinar metus aliquet non.                  
-                    </p>  
+
+                    <h4 data-i18n="skill2_title"></h4>
+                    <p data-i18n="skill2_description"></p>  
                     <button>                    
                         <svg class="arrow" xmlns="http://www.w3.org/2000/svg" width="25px" height="25px">
                             <use href="assets/img/icons.svg#arrow"></use>
@@ -131,10 +128,9 @@
                     <svg class="icon" xmlns="http://www.w3.org/2000/svg" width="25%" height="auto" viewBox="0 0 50 50">
                         <use href="assets/img/icons.svg#database"></use>
                     </svg>
-                    <h4>Database</h4>
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum commodo magna massa, eu maximus tortor finibus sit amet. Vivamus hendrerit lorem neque, quis pulvinar metus aliquet non.                  
-                    </p> 
+
+                    <h4 data-i18n="skill3_title"></h4>
+                    <p data-i18n="skill3_description"></p>  
                     <button>                    
                         <svg class="arrow" xmlns="http://www.w3.org/2000/svg" width="25px" height="25px">
                             <use href="assets/img/icons.svg#arrow"></use>
@@ -156,10 +152,9 @@
                     <svg class="icon" xmlns="http://www.w3.org/2000/svg" width="25%" height="auto" viewBox="0 0 35 35">
                         <use href="assets/img/icons.svg#cloud"></use>
                     </svg>
-                    <h4>Cloud</h4>
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum commodo magna massa, eu maximus tortor finibus sit amet. Vivamus hendrerit lorem neque, quis pulvinar metus aliquet non.                  
-                    </p>  
+
+                    <h4 data-i18n="skill4_title"></h4>
+                    <p data-i18n="skill4_description"></p>  
                     <button>                    
                         <svg class="arrow" xmlns="http://www.w3.org/2000/svg" width="25px" height="25px">
                             <use href="assets/img/icons.svg#arrow"></use>
@@ -181,68 +176,44 @@
 
         <section class="about flex-container" id="projects" data-link="nav_about">
             <h2 class="section-title gradient-title" data-i18n="about_title"></h2>
-
-            <article class="grid-container">
-                <article class="project">
-                    <div class="badge">Windows C# Application</div>
-                    <div class="info">
-                        <h5 class="name">Project Name</h5>
-                        <span class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span>
-                    </div>
-                </article>
-                <article class="project">
-                    <div class="badge">Python Script</div>
-                    <div class="info">
-                        <h5 class="name">Project Name</h5>
-                        <span class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span>
-                    </div>
-                </article>
-                <article class="project">
-                    <div class="badge">iOS React Application</div>
-                    <div class="info">
-                        <h5 class="name">Project Name</h5>
-                        <span class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span>
-                    </div>
-                </article>
-                <article class="project">
-                    <div class="badge">Web Interface</div>
-                    <div class="info">
-                        <h5 class="name">Project Name</h5>
-                        <span class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span>
-                    </div>
-                </article>
-            </article>
         </section>        
 
         <section class="contact" id="contact" data-link="nav_contact">
-            <h2 class="section-title gradient-title" data-i18n="contact_title"></h2>
+            <article class="flex-container">
+                <h2 class="section-title gradient-title" data-i18n="contact_title"></h2>
 
-            <article class="flex-container contact-box">
-                <article class="flex-container contact-item">
-                    <img src="/assets/img/email.png" alt="E-mail Icon">  
-                    <div class="divider"></div>    
-                    <div>
-                        <h4 data-i18n="contact1_title"></h4>
-                        <a href="mailto:anaclrdev@gmail.com" target="_blank">anaclrdev@gmail.com</a>
-                    </div>              
-                </article>
-                <article class="flex-container contact-item">                    
-                    <img src="/assets/img/github.png" alt="GitHub Icon">
-                    <div class="divider"></div>    
-                    <div>                        
-                        <h4 data-i18n="contact2_title"></h4>
-                        <a href="https://github.com/euanaclwra" target="_blank">github.com/euanaclwra</a>
+                <article class="contact-box">
+                    <div class="contact-item">
+                        <div class="flex-container">
+                            <img src="assets/img/mail.svg" alt="Mail Icon">
+                            <h4 data-i18n="contact1_title"></h4>
+                        </div>
+                        <a href="mailto:contato@naclara.dev" target="_blank">
+                            contato@naclara.dev
+                        </a>                        
+                    </div>
+
+                    <div class="contact-item">
+                        <div class="flex-container">
+                            <img src="assets/img/github.svg" alt="Mail Icon">
+                            <h4 data-i18n="contact2_title"></h4>
+                        </div>
+                        <a href="https://github.com/naclara-dev" target="_blank">
+                            naclara-dev
+                        </a>                        
+                    </div> 
+                    
+                    <div class="contact-item">
+                        <div class="flex-container">
+                            <img src="assets/img/linkedin.svg" alt="Mail Icon">
+                            <h4 data-i18n="contact3_title"></h4>
+                        </div>
+                        <a href="www.linkedin.com/in/naclaradev">
+                            naclaradev
+                        </a>                        
                     </div>
                 </article>
-                <article class="flex-container contact-item">                    
-                    <img src="/assets/img/linkedin.png" alt="E-mail Icon">
-                    <div class="divider"></div>
-                    <div>
-                        <h4 data-i18n="contact3_title"></h4>
-                        <a href="https://linkedin.com/in/anaclarasilva82/" target="_blank">linkedin.com/in/anaclarasilva82</a>
-                    </div>
-                </article>
-            </article>
+            </article>            
         </section>
     </main>
 </body>

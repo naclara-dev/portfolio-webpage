@@ -43,7 +43,6 @@ h1 {
   font-size: 0.7rem;
   display: inline-block;  
   white-space: nowrap; 
-  padding: 0.5rem;
   border-right: .05em solid #9e2490;
   overflow: hidden;
   animation: 
@@ -84,13 +83,14 @@ h1 {
   position: fixed;
   top: 20px;
   transition: all 0.2s;
-  background-color: rgba(255, 255, 255, 0.4);
-  backdrop-filter: blur(5px);
-  border-radius: 10px;
+  background: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.6);
+  border-radius: 18px;    
 }
 
 #navbar.active {
-  box-shadow: 0px 5px 15px 5px rgba(0,0,0,0.1);  
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08), inset 0 1px 0 rgba(255, 255, 255, 0.8);
+  background: linear-gradient(135deg,rgba(255, 255, 255, 0.95), rgba(245, 245, 245, 0.9), rgba(255, 255, 255, 0.85));
 }
 
 .monospaced {
@@ -267,54 +267,12 @@ h2 {
   margin-left: 10px;
 }
 
-.about {
-  align-content: center;
-}
-
 .flex-container {
   display: flex;
 }
 
 .grid-container {
   display: grid;
-}
-
-.about .flex-container {  
-  justify-content: center;
-  margin: 0 auto;
-  gap: 2rem;
-  width: 100%;
-  max-width: 1100px;
-}
-
-.about-child {
-  flex: 1;
-}
-
-.about_text {
-  border-left: solid var(--pink) 2px;
-  padding-left: 0.5rem;
-}
-
-.about h4 {
-  font-weight: normal;
-  color: var(--pink);
-}
-
-.education-frame {
-  border: solid #f2f2f2 1px;
-  padding: 1rem;
-  transition: all ease 0.3s;
-}
-
-.education-frame:hover {
-  transform: scale(1.1);
-  box-shadow: 0px 0px 33px 1px rgba(200, 46, 157, 0.2);
-}
-
-.education-frame .flex-container {
-  justify-content: space-between;
-  margin-top: 1.5rem;
 }
 
 .skills .flex-container {
@@ -384,68 +342,36 @@ h2 {
   opacity: 0.2;
 }
 
-#projects .grid-container {
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 1rem;
+.contact article.flex-container {
+  gap: 10rem;
+  justify-content: center;
 }
 
-#projects .grid-container .project {
-  border: solid var(--lightgray) 1px;
-  border-radius: 10px;
-  padding: 1rem;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.7)), url(../img/prj_analytics.jpg);
-  background-size: cover;
+.contact h2 {
+  font-size: 5.5rem;
+  text-align: left;
+  white-space: normal;
+  max-width: 6ch;
+  line-height: 92%;
+}
+
+.contact .contact-box {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  height: 170px;
+  gap: 3.5rem;
 }
 
-#projects .grid-container .project .badge {
-  background-color: var(--pink);
-  padding: 0.35rem 0.7rem;
-  color: white;
-  font-size: 0.7rem;
-  border-radius: 5px;
-  width: fit-content;
+.contact .contact-item img {
+  width: 30px;
+  margin-right: 1.2rem;
 }
 
-#projects .grid-container .project .name {
-  color: white;
-  font-weight: bold;
-  font-size: 1.2rem;
+.contact .contact-item h4 {
+  display: inline-block;
+  font-size: 2rem;
 }
 
-#projects .grid-container .project .description {
-  color: white;
-  font-size: 0.8rem;
-}
-
-.contact {
-  background: #02022B;
-}
-
-.contact-box {
-  gap: 2rem;
-  justify-content: space-evenly;
-  margin-top: 10rem;
-}
-
-.contact img {
-  width: 45%;
-  max-width: 120px;
-}
-
-.contact h4 {
-  text-transform: uppercase;
-}
-
-.contact-item {
-  align-items: center;
-}
-
-.contact-item a {
-  text-decoration: none;
-  color: white;  
-  background: linear-gradient(90deg, rgba(0, 0, 33, 1) 0%, rgba(9, 9, 71, 1) 35%, rgba(93, 20, 125, 1) 100%);  
+.contact .contact-item a {
+  font-size: 1.3rem;
+  opacity: 0.8;
 }
